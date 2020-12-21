@@ -1,2 +1,3 @@
 # CoffieShop
-# CoffeShop
+
+Next step: Mobile Version.
