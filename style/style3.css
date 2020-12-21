@@ -1,0 +1,205 @@
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  top: 0;
+  margin: 0;
+  height: auto;
+}
+
+.container {
+  margin: auto;
+  width: 1000px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+.container .header {
+  margin-top: 20px;
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo date " "logo date2";
+  -ms-grid-columns: 400px auto;
+      grid-template-columns: 400px auto;
+  width: 1000px;
+  height: 80px;
+  gap: 5px;
+}
+
+.container .header .logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  margin-left: 100px;
+}
+
+.container .header .date {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: date;
+}
+
+.container .header .date .l1, .container .header .date .l2 {
+  margin-left: 100px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+.container .header .date .l1::after, .container .header .date .l2::after {
+  content: "";
+  position: absolute;
+  width: 116px;
+  border: rgba(133, 133, 133, 0.2) solid 0.9px;
+  margin-top: 13px;
+}
+
+.container .header .date .l1 .number, .container .header .date .l2 .number {
+  margin-left: 8px;
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+.container .header .date .l2 {
+  background-color: #d65d5d !important;
+}
+
+.container .header .date .l3 {
+  margin-left: 100px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  opacity: 0.2;
+}
+
+.container .header .date .l3 .number {
+  margin-left: 8px;
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+.container .header .date .l3::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  border: rgba(133, 133, 133, 0.2) solid 0.9px;
+  margin-top: 13px;
+}
+
+.container .header .date .l3::before {
+  content: "";
+  position: absolute;
+  width: 133px;
+  border: rgba(133, 133, 133, 0.5) solid 0.5px;
+  margin-top: 13px;
+  opacity: 0.2;
+}
+
+.container .header .date .l4 {
+  margin-left: 100px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  opacity: 0.2;
+}
+
+.container .header .date .l4 .number {
+  margin-left: 8px;
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+.container .header .date2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: date2;
+}
+
+.container .header .date2 .YourDate1 {
+  margin-left: 90px;
+}
+
+.container .header .date2 .YourDate2 {
+  margin-left: 70px;
+}
+
+.container .header .date2 .YourDate3 {
+  margin-left: 30px;
+}
+
+.container .header .date2 .YourDate4 {
+  margin-left: 30px;
+}
+
+.container .Logging {
+  margin-top: 70px;
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "left right ";
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  width: 1000px;
+  height: 320px;
+  gap: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.container .Logging h1 {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.container .Logging .left {
+  line-height: 30px;
+  margin-left: 20px;
+}
+
+.container .Logging .right {
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+.container .Logging .right #input_mail {
+  height: 25px;
+  margin-left: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.container .Logging .right .pass {
+  height: 25px;
+  margin-top: 6px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.container .Logging .right .pass .pass {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.container .Logging #btnLogIn {
+  margin-top: 80px;
+  cursor: pointer;
+  height: 30px;
+}
+
+.container .Logging .inline2 {
+  font-size: 15px;
+}
+
+.container #btn1 {
+  margin-top: 30px;
+  cursor: pointer;
+  height: 30px;
+}
+/*# sourceMappingURL=style3.css.map */
