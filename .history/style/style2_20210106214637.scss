@@ -1,0 +1,2414 @@
+////Buttons color
+$btnColor:#eeebe8;
+$menuColor:#e7d9b7;
+
+
+
+////Mixin 
+
+@mixin L1{
+
+        list-style-type: none;
+        cursor: pointer;
+        display:none;
+    
+};
+
+@mixin productName {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom:solid 1px rgba(43, 41, 41, 0.3);
+    border-top:solid 1px rgba(43, 41, 41, 0.3);
+    padding:25px;
+    
+};
+
+@mixin btn {
+ 
+    width: 60%;
+    height:100%;
+    border-radius: 5px;
+    cursor: pointer;
+    
+};
+
+@mixin flexCenter{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+};
+
+@mixin quantity {
+
+    margin-left:20%;
+    width:50px;
+    border-radius: 5px;
+    font-size: 17px;
+
+};
+
+@mixin hover{
+    &:hover{
+        border:1px solid rgba(177, 177, 177 , 0.5);
+        cursor: pointer;
+    }
+}
+
+
+////////////////////////////////////////////
+
+body{
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    top:0;
+    margin:0;
+    height:auto;
+   
+};
+
+h1{
+    margin-left:15%;
+   
+}
+
+
+
+
+
+@media screen and(min-width:1024px){
+
+    #container{
+        margin:auto;
+        width: 1000px;
+        height: auto;
+        display:grid;
+      
+        .sticky{ 
+            position:sticky;
+            top:0;
+            
+        };  
+    
+
+.header{
+
+background-color:#fff;
+display:grid;
+grid-template-areas: "logo log1 log2";
+grid-template-columns: 400px auto 200px;
+width: 100%;
+height: 80px;
+gap:10px;
+
+
+.logo{
+    grid-area: logo;
+       
+}
+   
+.log1{
+           
+        font-size: 12px;
+        grid-area: log1;
+        margin:15px 0 0 300px;
+      
+        
+
+        &:hover{
+            cursor: pointer;
+        }
+        #icon{
+        margin-left:-10px;
+        padding:8px;
+
+        }
+        
+        
+    }
+.log2{
+        
+        color:black;
+        font-size: 12px;
+        grid-area: log2;
+        margin-top:15px;
+        margin-left:100px;
+        
+
+      
+        &:hover{
+            cursor: pointer;
+        }
+        #icon{
+            margin-left:-2px;
+            padding:8px;
+
+        }
+    
+    }  
+};  
+
+
+#basketContainer{
+  
+    background-color: #fff;
+    list-style-type: none;
+
+
+.list{
+    margin-top:35px;
+    display:none;
+   
+
+};
+    
+
+.border{
+
+    background-color: grey;
+    width:auto;
+    height: 30px;
+    display:none;
+
+  .btnBorder{
+      margin-top:4px;
+  }
+}        
+
+.marginBottom{
+    
+    border:2px solid black;   
+    padding: 10px;  
+    background-color: rgb(122, 85, 85);
+    
+} 
+
+       
+.l1{
+    list-style-type: none;
+    cursor: pointer;
+    display:none;
+
+.img{
+    margin:10px 0 0 -35px;
+
+};
+
+.described{
+    display: inline-block;
+    color:black;
+    margin-top:60px;
+    position: relative;
+    top: -45px;
+  
+}
+
+    .productPrice{
+        display: inline-block;
+        color:red;
+        position: relative;
+        top: -45px;
+       
+        .quant{
+          
+            display:inline-block;
+            font-weight: bold;
+        }
+        .quantPrice{
+           
+            font-weight: bold;
+            display:inline-block;
+        }
+        
+
+    #btnDelate1{
+     
+        display:inline-block;
+    }
+    
+}   
+}   
+
+.l2{
+
+   @include L1;
+}
+
+.l3{
+
+    @include L1;
+}
+
+.l4{
+    @include L1;
+}
+     
+.l5{
+    @include L1;
+}
+     
+.l6{
+    @include L1;
+}
+     
+.l7{
+    @include L1;
+}
+           
+.l8{
+    @include L1;
+}
+            
+.l9{
+    @include L1;
+}
+.l10{
+    @include L1;
+}
+.l11{
+    @include L1;
+}
+.l12{
+    @include L1;
+}
+.l13{
+    @include L1;
+}
+.l14{
+    @include L1;
+}
+.l15{
+    @include L1;
+}
+                                      
+};
+
+
+.popup{
+    position: fixed;
+    width: 1000px;
+	height: 100%;
+    background-color: rgba($color: #7a7979, $alpha: 0.8);
+    display:none;
+    
+.popupContainer{
+    width:70%;
+    border-radius: 3px;
+    margin:300px 0 0 130px;
+    position: absolute;
+    border-top: solid 20px black;
+    gap:5px;
+    display: grid;
+    background-color:rgba(233, 233, 233, 11);
+    border:solid 3px rgb(230, 217, 217);
+    grid-template-rows: 40px  ;
+    grid-template-columns: 400px auto ;
+    grid-template-areas: " mainTop mainTop mainTop mainTop  "
+                         "li . totalDecribe totalDecribe "
+                         ". . totalBasket totalBasketPrice"
+                         "btnContinue . .  btnOrder ";
+    
+    
+    
+    
+
+
+.totalDecribe{
+    grid-area:totalDecribe;
+    display:grid;
+    border-left:solid 0.5px black;
+    grid-template-areas: auto auto;
+    
+    grid-template-areas: "productIntager intager"
+    "totalBasket totalBasketPrice";
+
+    .productIntager{
+        grid-area:productIntager;
+        margin-top: 50px;
+        font-size:21px;
+        margin-left:10px;
+       
+    
+    }
+
+    .intager{
+        grid-area: intager;
+        margin-top: 50px;
+        font-size:21px;
+       
+    }
+
+    .totalBasket{
+        grid-area: totalBasket;
+        margin-top:10px;
+        margin-left:10px;
+        font-size:21px;
+
+        
+    
+    
+        }
+    
+    .totalBasketPrice{
+        grid-area: totalBasketPrice;
+        margin-top:10px;
+        font-size:21px;
+        }  
+
+
+};
+
+.mainTop{
+    background-color: #e7d9b7;
+    grid-area:mainTop;
+    display:grid;
+    grid-template-areas: "marginTop btnClose";
+
+    #btnClose{
+        grid-area: btnClose;
+        height: 20px;
+        width:80px;
+        color:rgb(209, 204, 204);
+        background-color: black;
+        margin:10px 0 0 450px;
+        margin-right: 10px;
+        
+    }
+    
+    .marginTop{
+        grid-area:marginTop;
+        height: 20px;
+        width:110%;
+        font-size: 18px;
+        padding: 5px;
+        
+        color:black;
+        
+
+    }}
+
+
+
+.li{
+        grid-area: li;
+        margin-left: 25px;
+      
+        
+        list-style-type: none;
+        .quantity{
+            display:none;
+        }
+        #btn1{
+            display:none;
+        }
+        .productDescribed{
+            display:none;
+        }
+        .img{
+            width:25%;
+            height: 25%;
+            margin:10px 0 0 30px;
+        }
+        h1{
+            font-size: 18px;
+            margin:0 0 0 50px;
+        }
+    }
+
+#btnContinue{
+        grid-area: btnContinue;
+        margin-bottom:15px;
+        margin-left:55px;
+        width:30%;
+        height: 75%;
+            
+};
+     
+    
+#btnOrder{
+        grid-area:btnOrder;
+        margin-bottom:15px;
+        width:65%;
+        height: 75%;
+
+    }    
+
+}
+};
+
+
+    .menu{
+       
+        background-color: $menuColor;
+        border-radius: 3px; 
+        list-style-type: none;
+
+        li{
+            display:inline-flex;
+            margin:20px;
+            font-size: 18px;   
+            height: 30px;
+
+            &:hover{
+
+                cursor: pointer;
+                color: lighten($menuColor, 9);
+            } 
+        }
+    };
+
+#footer{
+    background-color: rgba(122, 106, 106, 0.7);
+    display:grid;
+    grid-template-areas:"groupe1 groupe2 groupe3";
+    grid-template-rows: auto auto auto;
+    margin-top:30px;
+    border-radius: 3px;
+
+
+.groupe1{
+    grid-area:groupe1;
+    list-style-type: none;
+    line-height: 25px;
+    li{
+        &:hover{
+            cursor: pointer;
+            color:rgb(82, 79, 79);
+            
+        }
+
+    }
+   
+} 
+
+.groupe2{
+    grid-area:groupe2;
+    list-style-type: none;
+    line-height: 25px;
+
+     
+
+   
+    li{
+        &:hover{
+            cursor: pointer;
+            color:rgb(82, 79, 79);
+
+           
+            
+        }
+     
+    }
+} 
+
+
+.groupe3{
+    grid-area:groupe3;
+    list-style-type: none;
+    line-height: 25px;
+    
+    li{
+        &:hover{
+            cursor: pointer;
+            color:rgb(82, 79, 79) 
+        
+            
+        
+        };
+
+ 
+         
+
+    }
+} 
+
+};
+
+
+
+.parentDisable{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.8;
+    z-index: 998;
+    height: 100%;
+    width: 100%;
+};
+
+#popup{
+    position: absolute;
+    z-index: 999;
+    font-size: 30px;
+    color:red
+
+};
+
+
+
+.nameTitle{
+    margin-top:100px;
+}
+
+.productBasket{
+  
+    margin-top:50px;
+    width:100%;
+    text-align: center;
+    align-items: center;
+    display:grid;
+    grid-template-columns: 450px auto auto auto auto;
+    grid-template-areas: 
+    
+    "productName productQuant productPrice productValue productDelete"
+
+
+    "first1 second1 inputNumber1 productPriceValue1 deleteBasket1"
+    "first2 second2 inputNumber2 productPriceValue2 deleteBasket2"
+    "first3 second3 inputNumber3 productPriceValue3 deleteBasket3"
+    "first4 second4 inputNumber4 productPriceValue4 deleteBasket4"
+    "first5 second5 inputNumber5 productPriceValue5 deleteBasket5"
+    "first6 second6 inputNumber6 productPriceValue6 deleteBasket6"
+    "first7 second7 inputNumber7 productPriceValue7 deleteBasket7"
+    "first8 second8 inputNumber8 productPriceValue8 deleteBasket8"
+    "first9 second9 inputNumber9 productPriceValue9 deleteBasket9"
+    "first10 second10 inputNumber10 productPriceValue10 deleteBasket10"
+    "first11 second11 inputNumber11 productPriceValue11 deleteBasket11"
+    "first12 second12 inputNumber12 productPriceValue12 deleteBasket12"
+    "first13 second13 inputNumber13 productPriceValue13 deleteBasket13"
+    "first14 second14 inputNumber14 productPriceValue14 deleteBasket14"
+    "first15 second15 inputNumber15 productPriceValue15 deleteBasket15";
+
+
+
+    .productName{
+        grid-area: productName;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-bottom:solid 1px rgba(43, 41, 41, 0.3);
+        border-top:solid 1px rgba(43, 41, 41, 0.3);
+        padding:25px;
+      
+    }
+
+    .productQuant{
+        grid-area: productQuant;
+        @include productName;
+        border-left: solid 1px rgba(43, 41, 41, 0.3);
+
+
+        
+    }
+
+    .productPrice{
+        grid-area: productPrice;
+        @include productName;
+        border-left: solid 1px rgba(43, 41, 41, 0.3);
+        border-right: solid 1px rgba(43, 41, 41, 0.3);
+      
+    }
+
+    .productValue{
+        grid-area: productValue;
+        @include productName;
+       
+    }
+
+    .productDelete{
+        grid-area: productDelete;
+        @include productName;
+        border-left: solid 1px rgba(43, 41, 41, 0.3);
+
+
+    }
+
+        .first1{
+            grid-area:first1;
+            display:none;
+            margin-top:20px;
+         
+           .described{
+               position:relative;
+               top:-45px;
+
+            }
+           
+        }
+        .first2{
+            grid-area:first2;
+            display:none;
+            .described{
+                position:relative;
+                top:-45px;
+ 
+             }
+        }
+
+        .first3{
+            grid-area:first3;
+            display:none;
+            .described{
+                position:relative;
+                top:-45px;
+ 
+             }
+        }
+
+        .first4{
+            grid-area:first4;
+            display:none;
+            margin-left: 0;
+            .described{
+                position:relative;
+                top:-45px;
+ 
+             }
+        }
+
+        .first5{
+            grid-area:first5;
+            display:none;
+            .img5{
+                margin-right: 25px;
+            }
+            .described{
+                position:relative;
+                top:-45px;
+                margin-right: 15px;
+ 
+             }
+        }
+
+        .first6{
+            grid-area:first6;
+            display:none;
+       
+            .described{
+                position:relative;
+                top:-45px;
+                margin-right: 50px;
+ 
+             }
+        }
+
+        .first7{
+            grid-area:first7;
+            display:none;
+            .described{
+                position:relative;
+                top:-45px;
+                margin-right: 50px;
+ 
+             }
+        }
+
+        .first8{
+            grid-area:first8;
+            display:none;
+            .described{
+                position:relative;
+                top:-45px;
+ 
+             }
+        }
+
+        .first9{
+            grid-area:first9;
+            display:none;
+           
+            .described{
+                position:relative;
+                top:-45px;
+                margin-right: 120px;
+ 
+             }
+        }
+
+        .first10{
+            grid-area:first10;
+            display:none;
+            .described{
+                position:relative;
+                top:-45px;
+                margin-right: 50px;
+ 
+             }
+        }
+
+        .first11{
+            grid-area:first11;
+            display:none;
+            .described{
+                position:relative;
+                top:-45px;
+                margin-right: 50px;
+ 
+             }
+        }
+
+        .first12{
+            grid-area:first12;
+            display:none;
+            .described{
+                position:relative;
+                top:-45px;
+                margin-right: 50px;
+ 
+             }
+        }
+
+        .first13{
+            grid-area:first13;
+           display:none;
+            .described{
+                position:relative;
+                top:-45px;
+                margin-right: 50px;
+ 
+             }
+        }
+           
+        .first14{
+            grid-area:first14;
+            display:none;
+            .described{
+                position:relative;
+                top:-45px;
+                margin-right: 20px;
+ 
+             }
+        }
+           
+        .first15{
+            grid-area:first15;
+            display:none;
+            .described{
+                position:relative;
+                top:-45px;
+                margin-right: 70px;
+ 
+             }
+        }
+                 
+        
+        .second1{
+            grid-area:second1;
+            display:none;
+            
+        }
+
+        .second2{
+            grid-area:second2;
+            display:none;
+        }
+
+        .second3{
+            grid-area:second3;
+            display:none;
+        }
+
+        .second4{
+            grid-area:second4;
+            display:none;
+        }
+
+        .second5{
+            grid-area:second5;
+            display:none;
+        }
+
+        .second6{
+            grid-area:second6;
+            display:none;
+        }
+
+        .second7{
+            grid-area:second7;
+            display:none;
+        }
+
+        .second8{
+            grid-area:second8;
+            display:none;
+        }
+
+        .second9{
+            grid-area:second9;
+            display:none;
+        }
+
+        .second10{
+            grid-area:second10;
+            display:none;
+        }
+
+        .second11{
+            grid-area:second11;
+            display:none;
+        }
+
+        .second12{
+            grid-area:second12;
+            display:none;
+        }
+
+        .second13{
+            grid-area:second13;
+            display:none;
+        }
+
+        .second14{
+            grid-area:second14;
+            display:none;
+        }
+
+        .second15{
+            grid-area:second15;
+            display:none;
+            
+        }
+
+    
+        .inputNumber1{
+            grid-area:inputNumber1;
+            display:none;
+            
+        };
+
+        .inputNumber2{
+            grid-area:inputNumber2;
+            display:none;
+        };
+
+        .inputNumber3{
+            grid-area:inputNumber3;
+            display:none;
+        };
+    
+        .inputNumber4{
+            grid-area:inputNumber4;
+            display:none;
+        };
+
+        .inputNumber5{
+            grid-area:inputNumber5;
+            display:none;
+        };
+
+        .inputNumber6{
+            grid-area:inputNumber6;
+            display:none;
+        };
+
+        .inputNumber7{
+            grid-area:inputNumber7;
+            display:none;
+        };
+
+        .inputNumber8{
+            grid-area:inputNumber8;
+            display:none;
+        };
+
+        .inputNumber9{
+            grid-area:inputNumber9;
+            display:none;
+        };
+
+        .inputNumber10{
+            grid-area:inputNumber10;
+            display:none;
+        };
+
+        .inputNumber11{
+            grid-area:inputNumber11;
+            display:none;
+        };
+
+        .inputNumber12{
+            grid-area:inputNumber12;
+            display:none;
+        };
+
+        .inputNumber13{
+            grid-area:inputNumber13;
+            display:none;
+        };
+
+        .inputNumber14{
+            grid-area:inputNumber14;
+            display:none;
+        };
+
+        .inputNumber15{
+            grid-area:inputNumber15;
+            display:none;
+        };
+
+
+        .productPriceValue1{
+            grid-area:productPriceValue1;
+            display:none;
+           
+        }
+
+        .productPriceValue2{
+            grid-area:productPriceValue2;
+            display:none;
+        }
+
+        .productPriceValue3{
+            grid-area:productPriceValue3;
+            display:none;
+        }
+
+        .productPriceValue4{
+            grid-area:productPriceValue4;
+            display:none;
+        }
+
+        .productPriceValue5{
+            grid-area:productPriceValue5;
+            display:none;
+        }
+
+        .productPriceValue6{
+            grid-area:productPriceValue6;
+            display:none;
+        }
+
+        .productPriceValue7{
+            grid-area:productPriceValue7;
+            display:none;
+        }
+
+        .productPriceValue8{
+            grid-area:productPriceValue8;
+            display:none;
+        }
+
+        .productPriceValue9{
+            grid-area:productPriceValue9;
+            display:none;
+        }
+
+        .productPriceValue10{
+            grid-area:productPriceValue10;
+            display:none;
+        }
+
+        .productPriceValue11{
+            grid-area:productPriceValue11;
+            display:none;
+        }
+
+        .productPriceValue12{
+            grid-area:productPriceValue12;
+            display:none;
+        }
+
+        .productPriceValue13{
+            grid-area:productPriceValue13;
+            display:none;
+        }
+
+        .productPriceValue14{
+            grid-area:productPriceValue14;
+            display:none; 
+        }
+
+        .productPriceValue15{
+            grid-area:productPriceValue15;
+            display:none;
+        }
+
+
+        #deleteBasket1{
+            grid-area:deleteBasket1;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+            
+        }
+
+        #deleteBasket2{
+            grid-area:deleteBasket2;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket3{
+            grid-area:deleteBasket3;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket4{
+            grid-area:deleteBasket4;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket5{
+            grid-area:deleteBasket5;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket6{
+            grid-area:deleteBasket6;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket7{
+            grid-area:deleteBasket7;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket8{
+            grid-area:deleteBasket8;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket9{
+            grid-area:deleteBasket9;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket10{
+            grid-area:deleteBasket10;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket11{
+            grid-area:deleteBasket11;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket12{
+            grid-area:deleteBasket12;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+
+        #deleteBasket13{
+            grid-area:deleteBasket13;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket14{
+            grid-area:deleteBasket14;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+        #deleteBasket15{
+            grid-area:deleteBasket15;
+            display:none;
+            width:50%;
+            margin-left:35px;
+            cursor:pointer;
+        }
+
+};
+
+
+.containerC{
+    display:grid;
+    grid-template-columns: auto auto 200px;
+    grid-template-areas: "leftside payment basketSumUp ";
+    gap:25px;
+    margin-top:50px;
+   
+    
+
+.leftside{
+    grid-area: leftside;
+    line-height: 45px;
+
+}
+
+.payment{
+    grid-area: payment;
+    line-height: 45px;
+       
+}
+
+.basketSumUp{
+    grid-area: basketSumUp;
+    line-height: 45px;
+    margin-top:25px;
+
+}
+
+};
+
+.buttons{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:"btnone btnTwo " ;
+    margin-top:100px;
+
+
+.btnone{
+    grid-area: btnone;
+    margin-left:250px;
+    padding: 10px;
+    
+    #btnShopping{
+        height: 50px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+.btnTwo{
+    grid-area: btnTwo;
+    margin-left:200px;
+    padding: 10px;
+
+    #btnOrder1{
+        height: 50px;
+        width: 100px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-left:700px;
+    }
+}
+}
+}
+};
+
+
+
+
+@media screen and(max-width:570px){
+
+    #container{
+        margin:0;
+        width: 30%;
+        height: auto;
+        display:grid;
+      
+        .sticky{ 
+            position:sticky;
+            top:0;
+            
+        };   
+
+    
+
+    .header{
+    
+    background-color:#fff;
+    display:grid;
+    grid-template-areas: "logo log1 log2";
+    grid-template-columns:auto auto auto;
+    width: 80%;
+    height: 80px;
+    gap:10px;
+    
+    
+    .logo{
+        grid-area: logo;
+         
+    }
+       
+    .log1{
+               
+            font-size: 12px;
+            grid-area: log1;
+            margin-top:15px;
+            font-size: medium;
+        
+          
+            
+    
+            &:hover{
+                cursor: pointer;
+            }
+            #icon{
+          
+            padding:8px;
+    
+            }   
+        };
+
+    .log2{
+            
+            color:black;
+            font-size: 12px;
+            grid-area: log2;
+            margin-top:15px;
+            font-size: medium;
+                         
+            &:hover{
+                cursor: pointer;
+            }
+            #icon{
+                margin-left:-2px;
+                padding:8px;
+    
+            }
+        
+        }; 
+    };  
+    
+    
+    #basketContainer{
+      
+        background-color: #fff;
+        list-style-type: none;
+    
+    
+    .list{
+        margin-top:35px;
+        display:none;
+        
+    };
+         
+    .border{
+    
+        background-color: grey;
+        width:auto;
+        height: 30px;
+        display:none;
+    
+      .btnBorder{
+          margin-top:4px;
+      }
+    }        
+    
+    .marginBottom{
+        
+        border:2px solid black;   
+        padding: 10px;  
+        background-color: rgb(122, 85, 85);
+        
+    } 
+    
+           
+    .l1{
+        list-style-type: none;
+        cursor: pointer;
+        display:none;
+    
+    .img{
+        margin:10px 0 0 -35px;
+    
+    };
+    
+    .described{
+        display: inline-block;
+        color:black;
+        margin-top:60px;
+        position: relative;
+        top: -45px;
+      
+    }
+    
+        .productPrice{
+            display: inline-block;
+            color:red;
+            position: relative;
+            top: -45px;
+           
+            .quant{
+              
+                display:inline-block;
+                font-weight: bold;
+            }
+            .quantPrice{
+               
+                font-weight: bold;
+                display:inline-block;
+            }
+            
+    
+        #btnDelate1{
+         
+            display:inline-block;
+        }
+        
+    }   
+    }   
+    
+    .l2{
+    
+       @include L1;
+    }
+    
+    .l3{
+    
+        @include L1;
+    }
+    
+    .l4{
+        @include L1;
+    }
+         
+    .l5{
+        @include L1;
+    }
+         
+    .l6{
+        @include L1;
+    }
+         
+    .l7{
+        @include L1;
+    }
+               
+    .l8{
+        @include L1;
+    }
+                
+    .l9{
+        @include L1;
+    }
+    .l10{
+        @include L1;
+    }
+    .l11{
+        @include L1;
+    }
+    .l12{
+        @include L1;
+    }
+    .l13{
+        @include L1;
+    }
+    .l14{
+        @include L1;
+    }
+    .l15{
+        @include L1;
+    }
+                                          
+    };
+    
+    
+    .popup{
+        position: fixed;
+        width: 1000px;
+        height: 100%;
+        background-color: rgba($color: #7a7979, $alpha: 0.8);
+        display:none;
+        
+    .popupContainer{
+        width:70%;
+        border-radius: 3px;
+        margin:300px 0 0 130px;
+        position: absolute;
+        border-top: solid 20px black;
+        gap:5px;
+        display: grid;
+        background-color:rgba(233, 233, 233, 11);
+        border:solid 3px rgb(230, 217, 217);
+        grid-template-rows: 40px  ;
+        grid-template-columns: 400px auto ;
+        grid-template-areas: " mainTop mainTop mainTop mainTop  "
+                             "li . totalDecribe totalDecribe "
+                             ". . totalBasket totalBasketPrice"
+                             "btnContinue . .  btnOrder ";
+        
+        
+        
+        
+    
+    
+    .totalDecribe{
+        grid-area:totalDecribe;
+        display:grid;
+        border-left:solid 0.5px black;
+        grid-template-areas: auto auto;
+        
+        grid-template-areas: "productIntager intager"
+        "totalBasket totalBasketPrice";
+    
+        .productIntager{
+            grid-area:productIntager;
+            margin-top: 50px;
+            font-size:21px;
+            margin-left:10px;
+           
+        
+        }
+    
+        .intager{
+            grid-area: intager;
+            margin-top: 50px;
+            font-size:21px;
+           
+        }
+    
+        .totalBasket{
+            grid-area: totalBasket;
+            margin-top:10px;
+            margin-left:10px;
+            font-size:21px;
+    
+            
+        
+        
+            }
+        
+        .totalBasketPrice{
+            grid-area: totalBasketPrice;
+            margin-top:10px;
+            font-size:21px;
+            }  
+    
+    
+    };
+    
+    .mainTop{
+        background-color: #e7d9b7;
+        grid-area:mainTop;
+        display:grid;
+        grid-template-areas: "marginTop btnClose";
+    
+        #btnClose{
+            grid-area: btnClose;
+            height: 20px;
+            width:80px;
+            color:rgb(209, 204, 204);
+            background-color: black;
+            margin:10px 0 0 450px;
+            margin-right: 10px;
+            
+        }
+        
+        .marginTop{
+            grid-area:marginTop;
+            height: 20px;
+            width:110%;
+            font-size: 18px;
+            padding: 5px;
+            
+            color:black;
+            
+    
+        }}
+    
+    
+    
+    .li{
+            grid-area: li;
+            margin-left: 25px;
+          
+            
+            list-style-type: none;
+            .quantity{
+                display:none;
+            }
+            #btn1{
+                display:none;
+            }
+            .productDescribed{
+                display:none;
+            }
+            .img{
+                width:25%;
+                height: 25%;
+                margin:10px 0 0 30px;
+            }
+            h1{
+                font-size: 18px;
+                margin:0 0 0 50px;
+            }
+        }
+    
+    #btnContinue{
+            grid-area: btnContinue;
+            margin-bottom:15px;
+            margin-left:55px;
+            width:30%;
+            height: 75%;
+                
+    };
+         
+        
+    #btnOrder{
+            grid-area:btnOrder;
+            margin-bottom:15px;
+            width:65%;
+            height: 75%;
+    
+        }    
+    
+    }
+    };
+    
+    
+        .menu{
+           
+            background-color: $menuColor;
+            border-radius: 3px; 
+            list-style-type: none;
+            display:none;
+    
+            li{
+                display:inline-flex;
+                margin:20px;
+                font-size: 18px;   
+                height: 30px;
+    
+                &:hover{
+    
+                    cursor: pointer;
+                    color: lighten($menuColor, 9);
+                } 
+            }
+        };
+    
+    #footer{
+        background-color: rgba(122, 106, 106, 0.7);
+        display:grid;
+        grid-template-areas:"groupe1 groupe2 groupe3";
+        grid-template-rows: auto auto auto;
+        margin-top:30px;
+        border-radius: 3px;
+        width:86%;
+    
+    
+    .groupe1{
+        grid-area:groupe1;
+        list-style-type: none;
+        line-height: 25px;
+        margin:auto;
+        margin-top:20px;
+       
+        li{
+            &:hover{
+                cursor: pointer;
+                color:rgb(82, 79, 79);
+                
+            }
+    
+        }
+       
+    } 
+    
+    .groupe2{
+        grid-area:groupe2;
+        list-style-type: none;
+        line-height: 25px;
+        margin:auto;
+        margin-top:20px;
+    
+    
+        li{
+            &:hover{
+                cursor: pointer;
+                color:rgb(82, 79, 79);
+              
+            }
+        }
+    };
+    
+    
+    .groupe3{
+        grid-area:groupe3;
+        list-style-type: none;
+        line-height: 25px;
+        margin:auto;
+        margin-top:20px;
+        
+        li{
+            &:hover{
+                cursor: pointer;
+                color:rgb(82, 79, 79)        
+            }; 
+        }
+    }  
+    };
+    
+    .parentDisable{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: 0.8;
+        z-index: 998;
+        height: 100%;
+        width: 100%;
+    };
+    
+    #popup{
+        position: absolute;
+        z-index: 999;
+        font-size: 30px;
+        color:red
+    
+    };
+    
+    
+    
+    .nameTitle{
+        margin-top:50px;
+        display:flex;
+        justify-content: center;
+        width:87%;
+    }
+    
+    .productBasket{
+     
+        display:grid;
+        margin-top:50px;
+        width:85%;
+        grid-template-columns: 25%  25%  25%  25%; 
+        grid-template-areas:  
+        "productName productQuant productValue productDelete"
+        "first1 second1 productPriceValue1 deleteBasket1"
+        "first2 second2 productPriceValue2 deleteBasket2"
+        "first3 second3 productPriceValue3 deleteBasket3"
+        "first4 second4 productPriceValue4 deleteBasket4"
+        "first5 second5 productPriceValue5 deleteBasket5"
+        "first6 second6 productPriceValue6 deleteBasket6"
+        "first7 second7 productPriceValue7 deleteBasket7"
+        "first8 second8 productPriceValue8 deleteBasket8"
+        "first9 second9 productPriceValue9 deleteBasket9"
+        "first10 second10 productPriceValue10 deleteBasket10"
+        "first11 second11 productPriceValue11 deleteBasket11"
+        "first12 second12 productPriceValue12 deleteBasket12"
+        "first13 second13 productPriceValue13 deleteBasket13"
+        "first14 second14 productPriceValue14 deleteBasket14"
+        "first15 second15 productPriceValue15 deleteBasket15";
+
+    
+        .productName{
+            grid-area: productName;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            border-bottom:solid 1px rgba(43, 41, 41, 0.3);
+            border-top:solid 1px rgba(43, 41, 41, 0.3);
+            padding:25px;
+            font-size: medium;
+           
+              
+        }
+    
+        .productQuant{
+            grid-area: productQuant;
+            @include productName;
+            border-left: solid 1px rgba(43, 41, 41, 0.3);
+           
+
+        }
+    
+        .productPrice{
+            grid-area: productPrice;
+            @include productName;
+            border-left: solid 1px rgba(43, 41, 41, 0.3);
+            border-right: solid 1px rgba(43, 41, 41, 0.3);
+            display:none;
+           
+          
+        }
+    
+        .productValue{
+            grid-area: productValue;
+            @include productName;
+            border-left: solid 1px rgba(43, 41, 41, 0.3);
+           
+           
+        }
+    
+        .productDelete{
+            grid-area: productDelete;
+            @include productName;
+            border-left: solid 1px rgba(43, 41, 41, 0.3);
+           
+    
+    
+        }
+    
+            .first1{
+                grid-area:first1;
+                display:none;
+                margin-top:20px;
+                width:10%;
+             
+               .described{
+                  display:none;
+    
+                }
+                .img1{
+                    display: flex;
+                    justify-content: center;
+                    height: 100%; 
+                }
+              
+            }
+            .first2{
+                grid-area:first2;
+                display:none;
+                .described{
+               
+                    display:none;
+     
+                 }
+            }
+    
+            .first3{
+                grid-area:first3;
+               display:none;
+                .described{
+                
+                    display:none;
+     
+                 }
+            }
+    
+            .first4{
+                grid-area:first4;
+                display:none;
+                margin-left: 0;
+                .described{
+                    display:none;
+     
+                 }
+            }
+    
+            .first5{
+                grid-area:first5;
+                display:none;
+                .img5{
+                    margin-right: 25px;
+                }
+                .described{
+                    display:none;
+     
+                 }
+            }
+    
+            .first6{
+                grid-area:first6;
+                display:none;
+           
+                .described{
+                    display:none;
+     
+                 }
+            }
+    
+            .first7{
+                grid-area:first7;
+                display:none;
+                .described{
+                    display:none;
+     
+                 }
+            }
+    
+            .first8{
+                grid-area:first8;
+                display:none;
+                .described{
+                    display:none;
+     
+                 }
+            }
+    
+            .first9{
+                grid-area:first9;
+                display:none;
+               
+                .described{
+                    display:none;
+     
+                 }
+            }
+    
+            .first10{
+                grid-area:first10;
+                display:none;
+                .described{
+                    display:none;
+     
+                 }
+            }
+    
+            .first11{
+                grid-area:first11;
+                display:none;
+                .described{
+                    display:none;
+     
+                 }
+            }
+    
+            .first12{
+                grid-area:first12;
+                display:none;
+                .described{
+                    display:none;
+     
+                 }
+            }
+    
+            .first13{
+                grid-area:first13;
+               display:none;
+                .described{
+                    display:none;
+     
+                 }
+            }
+               
+            .first14{
+                grid-area:first14;
+                display:none;
+                .described{
+                    display:none;
+     
+                 }
+            }
+               
+            .first15{
+                grid-area:first15;
+                display:none;
+                .described{
+                    display:none;
+     
+                 }
+            }
+                     
+            
+            .second1{
+                grid-area:second1;
+                display:none;
+                margin:auto;
+                
+            }
+    
+            .second2{
+                grid-area:second2;
+                display:none;
+                margin:auto;
+            }
+    
+            .second3{
+                grid-area:second3;
+                display:none;
+                margin:auto;
+            }
+    
+            .second4{
+                grid-area:second4;
+                display:none;
+                margin:auto;
+            }
+    
+            .second5{
+                grid-area:second5;
+                display:none;
+                margin:auto;
+            }
+    
+            .second6{
+                grid-area:second6;
+                display:none;
+                margin:auto;
+            }
+    
+            .second7{
+                grid-area:second7;
+                display:none;
+                margin:auto;
+            }
+    
+            .second8{
+                grid-area:second8;
+                display:none;
+                margin:auto;
+            }
+    
+            .second9{
+                grid-area:second9;
+                display:none;
+                margin:auto;
+            }
+    
+            .second10{
+                grid-area:second10;
+                display:none;
+                margin:auto;
+            }
+    
+            .second11{
+                grid-area:second11;
+                display:none;
+                margin:auto;
+            }
+    
+            .second12{
+                grid-area:second12;
+                display:none;
+                margin:auto;
+            }
+    
+            .second13{
+                grid-area:second13;
+                display:none;
+                margin:auto;
+            }
+    
+            .second14{
+                grid-area:second14;
+                display:none;
+                margin:auto;
+            }
+    
+            .second15{
+                grid-area:second15;
+                display:none;
+                margin:auto;
+                
+            }
+    
+        
+            .inputNumber1{
+                grid-area:inputNumber1;
+                
+                display:none;
+                
+            };
+    
+            .inputNumber2{
+                grid-area:inputNumber2;
+                display:none;
+            };
+    
+            .inputNumber3{
+                grid-area:inputNumber3;
+                display:none;
+            };
+        
+            .inputNumber4{
+                grid-area:inputNumber4;
+                display:none;
+            };
+    
+            .inputNumber5{
+                grid-area:inputNumber5;
+                display:none;
+            };
+    
+            .inputNumber6{
+                grid-area:inputNumber6;
+                display:none;
+            };
+    
+            .inputNumber7{
+                grid-area:inputNumber7;
+                display:none;
+            };
+    
+            .inputNumber8{
+                grid-area:inputNumber8;
+                display:none;
+            };
+    
+            .inputNumber9{
+                grid-area:inputNumber9;
+                display:none;
+            };
+    
+            .inputNumber10{
+                grid-area:inputNumber10;
+                display:none;
+            };
+    
+            .inputNumber11{
+                grid-area:inputNumber11;
+                display:none;
+            };
+    
+            .inputNumber12{
+                grid-area:inputNumber12;
+                display:none;
+            };
+    
+            .inputNumber13{
+                grid-area:inputNumber13;
+                display:none;
+            };
+    
+            .inputNumber14{
+                grid-area:inputNumber14;
+                display:none;
+            };
+    
+            .inputNumber15{
+                grid-area:inputNumber15;
+                display:none;
+            };
+    
+    
+            .productPriceValue1{
+                grid-area:productPriceValue1;
+                display:none;
+                margin:auto;
+               
+            }
+    
+            .productPriceValue2{
+                grid-area:productPriceValue2;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue3{
+                grid-area:productPriceValue3;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue4{
+                grid-area:productPriceValue4;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue5{
+                grid-area:productPriceValue5;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue6{
+                grid-area:productPriceValue6;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue7{
+                grid-area:productPriceValue7;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue8{
+                grid-area:productPriceValue8;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue9{
+                grid-area:productPriceValue9;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue10{
+                grid-area:productPriceValue10;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue11{
+                grid-area:productPriceValue11;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue12{
+                grid-area:productPriceValue12;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue13{
+                grid-area:productPriceValue13;
+                display:none;
+                margin:auto;
+            }
+    
+            .productPriceValue14{
+                grid-area:productPriceValue14;
+                display:none; 
+                margin:auto;
+            }
+    
+            .productPriceValue15{
+                grid-area:productPriceValue15;
+                display:none;
+                margin:auto;
+            }
+    
+    
+            #deleteBasket1{
+                grid-area:deleteBasket1;
+                display:none;
+                width:50%;
+                cursor:pointer;
+                margin:auto;
+                
+            }
+    
+            #deleteBasket2{
+                grid-area:deleteBasket2;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket3{
+                grid-area:deleteBasket3;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket4{
+                grid-area:deleteBasket4;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket5{
+                grid-area:deleteBasket5;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket6{
+                grid-area:deleteBasket6;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket7{
+                grid-area:deleteBasket7;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket8{
+                grid-area:deleteBasket8;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket9{
+                grid-area:deleteBasket9;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket10{
+                grid-area:deleteBasket10;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket11{
+                grid-area:deleteBasket11;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket12{
+                grid-area:deleteBasket12;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+    
+            #deleteBasket13{
+                grid-area:deleteBasket13;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket14{
+                grid-area:deleteBasket14;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+            #deleteBasket15{
+                grid-area:deleteBasket15;
+                display:none;
+                width:50%;
+                margin:auto;
+                cursor:pointer;
+            }
+    
+    };
+    
+    
+    .containerC{
+        display:grid;
+        grid-template-columns: auto auto 200px;
+        grid-template-areas: "leftside payment basketSumUp ";
+        gap:25px;
+        margin-top:50px;
+        width: 87%;
+       
+        
+    
+    .leftside{
+        grid-area: leftside;
+        line-height: 45px;
+        .gls1{
+            font-size: 75%;
+            line-height: 170%;
+            font-weight: 300;
+        }
+
+        .gls2{
+            font-size: 75%;
+            line-height: 170%;
+            font-weight: 300;
+        }
+
+        .gls3{
+            font-size: 75%;
+            line-height: 170%;
+            font-weight: 300;
+        }
+
+        .gls4{
+            font-size: 75%;
+            line-height: 170%;
+            font-weight: 300;
+        }
+    
+    }
+    
+    .payment{
+        grid-area: payment;
+        line-height: 45px;
+
+        .pay1{
+            font-size: 75%;
+            line-height: 170%;
+            font-weight: 300;
+        }
+
+        .pay2{
+            font-size: 75%;
+            line-height: 170%;
+            font-weight: 300;
+        }
+           
+    }
+    
+    .basketSumUp{
+        grid-area: basketSumUp;
+        line-height: 45px;
+        margin-top:20px;
+        .total{
+            font-size: 22px;
+        }
+    
+    }
+    
+    };
+    
+    .buttons{
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:"btnone" 
+                            "btnTwo " ;
+        margin-top:100px;
+    
+    
+    .btnone{
+        grid-area: btnone;
+        margin-left:250px;
+        padding: 10px;
+        
+        #btnShopping{
+            height: 50px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    }
+    
+    .btnTwo{
+        grid-area: btnTwo;
+        margin-left:200px;
+        padding: 10px;
+    
+        #btnOrder1{
+            height: 50px;
+            width: 100px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-left:0px;
+        }
+    }   
+    }
+
+    };
+};
+
+

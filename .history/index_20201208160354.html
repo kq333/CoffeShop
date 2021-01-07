@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sklep z Kawą</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div id="container">
+            <div class="sticky">
+            <header class="header">
+                
+                <div class="logo">
+                    <img src="img/logo.jpg" width="80" height="30">
+                </div>
+               
+                    <div class="log1"><i class="fa fa-sign-in" aria-hidden="true" id="icon"></i>Zaloguj się</div>
+                    <div class="log2"><i class="fa fa-sign-out" aria-hidden="true" id="icon"></i>Rejestracja</div>
+                
+                <div class="basket">
+                    <span class="basketName"><i class="fa fa-shopping-basket" id="icon"></i>Kosz</span>
+                    <span class="num"></span>
+                    <span class="priceTo"></span>
+                    <div class="containerB">
+                   
+                    <div id="basketContainer">
+                    
+                        <ul class="list">
+                            
+                            <li class="l1">
+                               
+                                    <img class="img" src="img/1.jpg" width="90" height="80" alt="segafredo">
+                                    <span class="described">Segafredo Expresso Cafe 1kg.</span>
+                                    <div class="productPrice">
+                                        <span class="quant"></span>
+                                        <span class="quantPrice"></span>
+                                        <button id="btnDelate1">usuń</button>
+                                    </div>  
+
+                            </li>                      
+                            <li class="l2">
+                               
+                                    <img class="img" src="img/d1.jpg" width="90" height="80" alt="Dellmayr">
+                                    <span class="described">Dellmayr Expresso Cafe 1kg.</span>
+                                    <div class="productPrice">
+                                        <span class="quant2"></span>
+                                        <span class="quantPrice2"></span>
+                                        <button id="btnDelate2">usuń</button>
+                                    </div>
+                                
+                            </li>
+                            <li class="l3">
+                                <img class="img" src="img/d2.jpg" width="90" height="80" alt="Dellmayr">
+                                <span class="described">Dellmayr Expresso Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant3"></span>
+                                    <span class="quantPrice3"></span>
+                                    <button id="btnDelate3">usuń</button>
+                                </div>    
+                               
+                            </li>
+                            <li class="l4">
+
+                                <img class="img" src="img/l3.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza L`Expresso Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant4"></span>
+                                    <span class="quantPrice4"></span>
+                                    <button id="btnDelate4">usuń</button>
+                                </div>   
+                            </li>
+                            <li class="l5">
+
+                                <img class="img" src="img/l4.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza Crema Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant5"></span>
+                                    <span class="quantPrice5"></span>
+                                    <button id="btnDelate5">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l6">
+
+                                <img class="img" src="img/l5.jpg" width="90" height="80" alt="Illy">
+                                <span class="described">Illy Etiopia Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant6"></span>
+                                    <span class="quantPrice6"></span>
+                                    <button id="btnDelate6">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l7">
+
+                                <img class="img" src="img/l6.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza Rosa Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant7"></span>
+                                    <span class="quantPrice7"></span>
+                                    <button id="btnDelate7">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l8">
+
+                                <img class="img" src="img/l7.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza Creme Gusto Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant8"></span>
+                                    <span class="quantPrice8"></span>
+                                    <button id="btnDelate8">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l9">
+
+                                <img class="img" src="img/m1.jpg" width="90" height="80" alt="Inka">
+                                <span class="described">Inka  Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant9"></span>
+                                    <span class="quantPrice9"></span>
+                                    <button id="btnDelate9">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l10">
+
+                                <img class="img" src="img/m2.jpg" width="90" height="80" alt="MkCafe">
+                                <span class="described">MK Cafe  Fresh Crema 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant10"></span>
+                                    <span class="quantPrice10"></span>
+                                    <button id="btnDelate10">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l11">
+
+                                <img class="img" src="img/m3.jpg" width="90" height="80" alt="Tupinamba">
+                                <span class="described">Tupinamba  Black 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant11"></span>
+                                    <span class="quantPrice11"></span>
+                                    <button id="btnDelate11">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l12">
+
+                                <img class="img" src="img/t1.jpg" width="90" height="80" alt="Tchibo">
+                                <span class="described">Tchibo Crema   1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant12"></span>
+                                    <span class="quantPrice12"></span>
+                                    <button id="btnDelate12">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l13">
+
+                                <img class="img" src="img/w1.jpg" width="90" height="80" alt="Woseba">
+                                <span class="described">Woseba  Cafe Brasil   1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant13"></span>
+                                    <span class="quantPrice13"></span>
+                                    <button id="btnDelate13">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l14">
+
+                                <img class="img" src="img/w2.jpg" width="90" height="80" alt="Woseba">
+                                <span class="described">Woseba  Mocca Fix Gold   1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant14"></span>
+                                    <span class="quantPrice14"></span>
+                                    <button id="btnDelate14">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l15">
+
+                                <img class="img" src="img/m4.jpg" width="90" height="80" alt="Kimbo">
+                                <span class="described">Kimbo   Expresso   1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant15">0</span>
+                                    <span class="quantPrice15">0 pln</span>
+                                    <button id="btnDelate15">usuń</button>
+                                </div> 
+                            </li>
+                           
+                        </ul>
+                       <div class="border">
+                           <button class="btnBorder">Do Kasy</button>
+                        
+                       </div>
+                        
+                    
+                </div>
+            </div>     
+                </div>
+            </div>
+            </header>
+            <div class="popup">
+                <div class="popupContainer">
+                    <div class="mainTop">
+                         <span class="marginTop">Pomyślnie dodano do kosza</span>
+                
+                         <button id="btnClose">Zamknij X</button>
+                    </div>
+                    
+                           
+                    <li class="li"></li>
+                       
+                        <button id="btnContinue">Kontynuuj Zakupy</button>
+                            <div class="totalDecribe">
+                                <span class="productIntager">Ilość produktu:</span>
+                                <span class="intager"></span>
+                                <div class="totalBasket">Wartość koszyka:</div>
+                                <span class="totalBasketPrice"> </span>
+                                
+                            </div>
+                            <button id="btnOrder">Złóż zamówienie</button>
+                        </div>
+
+                    
+
+            </div>
+
+            <nav class="menu" >
+               
+                <ul>
+                    <li>Producenci</li>
+                    <li>Kawa</li>
+                    <li>Herbata</li>
+                    <li>Yerba</li>
+                    <li>Delikatesy</li>
+                    <li>Ekspresy i akcesoria</li>
+                    <li>Outlet</li>
+                </ul>
+            </nav>
+            <div class="mainContent">
+            <aside class="cafeGenres">
+                
+                    <ul>
+                        <li>Alberto</li>
+                        <li>Barbera</li>
+                        <li>Bogani</li>
+                        <li>Corsini</li>
+                        <li>Dellmayr</li>
+                        <li>Diemme</li>
+                        <li>Ducafe</li>
+                        <li>Lavazza</li>
+                        <li>Segafredo</li>
+                        <li>Tchibo</li>
+                        <li>Rossio</li>
+                        <li>Woseba</li>
+                        <li>Jacobs</li>
+                        <li>Verganon</li>
+                        <li>Molinari</li>
+                        <li>Marley</li>
+                        <li>Movenpick</li>
+                        <li>Lucatte</li>
+                        
+                    </ul>
+                
+            </aside>    
+                    <main class= "main">
+                       
+                           <div class="product1">
+                               <h1>Segafredo</h1>
+                               <img class="img1" src="img/1.jpg" width="200" height="200" alt="segafredo">
+                               
+                               <div class="productDescribed">
+                                <span>Cena:</span>
+                                <em>35,00 pln</em>
+                                   <p>Rodzaj: 
+                                       <strong>kawa ziarnista</strong>
+                                       <br><br>
+                                       Skład: 
+                                       <strong>100% Arabica</strong>
+                                       <br><br>
+                                       Waga: 
+                                       <strong>1kg</strong>
+                                      
+                                   </p>
+                                   <div class="purchaise">
+                                       <span class="display">
+                                       <form>
+                                           <input  id="quantity1" type="number" min="0" placeholder="0">
+                                       </form></span>
+                                       <span class="display">
+                                    <button value="a" id="btn1">Do kosza</button></span>
+                                </div>
+                               </div>
+                           </div>
+                          
+
+
+                       
+                        <div class="product2">
+                           <h1>Dallmayr</h1> 
+                            <img class="img2"  src="img/d1.jpg" width="200" height="200" alt="Dallmayr">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>45,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <span class="name">Cena za Towar:</span>
+                                <span class="price"></span>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity2" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="b"  id="btn2">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                      
+
+                    
+                        <div class="product3">
+                            <h1>Dallmayr</h1>
+                            <img class="img3" src="img/d2.jpg" width="200" height="200" alt="Dallmayr">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>32,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity3" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="c" id="btn3">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                   
+                        <div class="product4">
+                            <h1>Lavazza</h1>
+                            <img class="img4" src="img/l3.jpg" width="200" height="200" alt="Lavazza">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>55,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity4" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="d" id="btn4">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                   
+                        <div class="product5">
+                            <h1>Lavazza</h1>
+                            <img class="img5" src="img/l4.jpg" width="200" height="200" alt="segafredo">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>55,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity5" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="e" id="btn5">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                   
+                        <div class="product6">
+                            <h1>Illy</h1>
+                            <img class="img6" src="img/l5.jpg" width="200" height="200" alt="Illy">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>51,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity6" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="f" id="btn6">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                    
+                        <div class="product7">
+                            <h1>Lavazza</h1>
+                            <img class="img7" src="img/l6.jpg" width="200" height="200" alt="Lavazza">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>49,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity7" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="g" id="btn7">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                   
+                        <div class="product8">
+                            <h1>Lavazza</h1>
+                            <img class="img8" src="img/l7.jpg" width="200" height="200" alt="Lavazza">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>53,50 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity8" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="h" id="btn8">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                  
+                        <div class="product9">
+                            <h1>Inka</h1>
+                            <img class="img9" src="img/m1.jpg" width="200" height="200" alt="Movenpick">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>47,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity9" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="i" id="btn9">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                    
+                        <div class="product10">
+                            <h1>MK Cafe</h1>
+                            <img class="img10" src="img/m2.jpg" width="200" height="200" alt="Mk Cafe">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>43,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity10" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="j" id="btn10">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                    
+                        <div class="product11">
+                            <h1>Tupinamba</h1>
+                            <img class="img11" src="img/m3.jpg" width="200" height="200" alt="Mokate">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>35,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity11" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="k" id="btn11">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                    
+                        <div class="product12">
+                            <h1>Tchibo</h1>
+                            <img class="img12" src="img/t1.jpg" width="200" height="200" alt="Tchibo">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>46,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity12" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="l" id="btn12">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                   
+                        <div class="product13">
+                            <h1>Woseba</h1>
+                            <img class="img13" src="img/w1.jpg" width="200" height="200" alt="Woseba">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>49,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity13" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="m" id="btn13">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                   
+                        <div class="product14">
+                            <h1>Woseba</h1>
+                            <img class="img14" src="img/w2.jpg" width="200" height="200" alt="Woseba">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>32,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity14" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="n" id="btn14">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                 
+                        <div class="product15">
+                            <h1>Kimbo</h1>
+                            <img class="img15" src="img/m4.jpg" width="200" height="200" alt="Kimbo">
+                            
+                            <div class="productDescribed">
+                             <span>Cena:</span>
+                             <em>52,00 pln</em>
+                                <p>Rodzaj: 
+                                    <strong>kawa ziarnista</strong>
+                                    <br><br>
+                                    Skład: 
+                                    <strong>100% Arabica</strong>
+                                    <br><br>
+                                    Waga: 
+                                    <strong>1kg</strong>
+                                   
+                                </p>
+                                <div class="purchaise">
+                                    <form>
+                                        <input id="quantity15" type="number" min="0" placeholder="0">
+                                    </form>
+                                 <button value="0" id="btn15">Do kosza</button>
+                             </div>
+                            </div>
+                        </div>
+                      
+
+
+                    </main>
+                </div>
+             
+                    <footer id="footer">
+                       
+                        
+                            <ul class="groupe1">
+                                <li>Moje konto</li>
+                                <li>Twoje zamówienia</li>
+                                <li>Ustawienia konta</li>
+                                <li>Program lojalnościowy</li>
+                                <li>Procedura wymiany punktów</li>
+                            </ul>
+        
+                        
+                        
+                            <ul class="groupe2">
+                                <li>Dostawa</li>
+                                <li>Płatności</li>
+                                <li>czas i koszty dostawy</li>
+                                <li>Faktury i paragony</li>
+                                <li>odbiór osobisty</li>
+                            </ul>
+                        
+                        
+                            <ul class="groupe3">
+                                <li>Kontakt</li>
+                                <li>Poniedziałek - Piątek</li>
+                                
+                                <li>8:00 - 18.30</li>
+                            
+                                <li>sklep@sklep.pl</li>
+                                
+                                <li>tel: +48 125 457 120</li>
+                                
+                                <li>Wrocław, ul. Ćwiartki 3/4</li>
+                            </ul>
+                        
+                    
+                    </footer>
+           
+                  
+                    <script src="script.js" async></script>
+    </body>
+</html>

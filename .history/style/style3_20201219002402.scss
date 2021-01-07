@@ -1,0 +1,107 @@
+body{
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    top:0;
+    margin:0;
+    height:auto;
+}
+
+
+
+@mixin btn {
+ 
+    width: 60%;
+    height:100%;
+    border-radius: 5px;
+    cursor: pointer;
+    
+};
+
+
+.container{
+    margin:auto;
+    width: 1000px;
+    height: auto;
+    display:grid;
+
+
+    .header{
+        margin-top:20px;
+        background-color:#fff;
+        display:grid;
+        grid-template-areas:"logo date "
+                            "logo   date2";
+        grid-template-columns: 300px auto ;
+        width: 1000px;
+        height: 80px;
+        gap:5px;
+
+        .logo{
+            grid-area: logo;
+        }
+
+        .date{
+            grid-area: date;
+
+            .l1{
+
+                margin-left:40px;
+                font-size: 25px;
+                width:30px;
+                height: 30px;
+                border-radius: 50%;
+                display: inline-block;
+                background-color: grey;
+
+
+                .number{
+                    margin-left: 6px;
+                }
+                
+
+            }
+
+            .l2{
+                
+            }
+
+            .l3{
+                
+            }
+
+            .l4{
+                
+            }
+        }
+
+
+}
+
+.Logging{
+    margin-top:70px;
+    background-color:#fff;
+    display:grid;
+    grid-template-areas:"left right ";
+    grid-template-columns: auto auto ;
+    width: 1000px;
+    height: 500px;
+    gap:5px;
+    border:1px solid grey;
+
+
+
+    .left{
+
+    }
+
+    .right{
+        
+    }
+
+
+
+}
+
+
+};
+

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sklep z Kawą</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style2.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div id="container">
+            <div class="sticky">
+            <header class="header">
+                
+                <div class="logo">
+                    <img src="img/logo.jpg" width="200" height="80">
+                </div>
+               
+                    <div class="log1"><i class="fa fa-sign-in" aria-hidden="true" id="icon"></i>Zaloguj się</div>
+                    <div class="log2"><i class="fa fa-sign-out" aria-hidden="true" id="icon"></i>Rejestracja</div>
+                
+                <div class="basket">
+                   
+                    <span class="num"></span>
+                    <span class="priceTo"></span>
+                    <div class="containerB">
+                   
+                    <div id="basketContainer">
+                    
+                        <ul class="list">
+                            
+                            <li class="l1">
+                               
+                                    <img class="img1" src="img/1.jpg" width="90" height="80" alt="segafredo">
+                                    <span class="described">Segafredo Expresso Cafe 1kg.</span>
+                                    <div class="productPrice">
+                                        <span class="quant"></span>
+                                        <span class="quantPrice"></span>
+                                        <button id="btnDelate1">usuń</button>
+                                    </div>  
+
+                            </li>                      
+                            <li class="l2">
+                               
+                                    <img class="img2" src="img/d1.jpg" width="90" height="80" alt="Dellmayr">
+                                    <span class="described">Dellmayr Expresso Cafe 1kg.</span>
+                                    <div class="productPrice">
+                                        <span class="quant2"></span>
+                                        <span class="quantPrice2"></span>
+                                        <button id="btnDelate2">usuń</button>
+                                    </div>
+                                
+                            </li>
+                            <li class="l3">
+                                <img class="img3" src="img/d2.jpg" width="90" height="80" alt="Dellmayr">
+                                <span class="described">Dellmayr Expresso Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant3"></span>
+                                    <span class="quantPrice3"></span>
+                                    <button id="btnDelate3">usuń</button>
+                                </div>    
+                               
+                            </li>
+                            <li class="l4">
+
+                                <img class="img4" src="img/l3.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza L`Expresso Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant4"></span>
+                                    <span class="quantPrice4"></span>
+                                    <button id="btnDelate4">usuń</button>
+                                </div>   
+                            </li>
+                            <li class="l5">
+
+                                <img class="img5" src="img/l4.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza Crema Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant5"></span>
+                                    <span class="quantPrice5"></span>
+                                    <button id="btnDelate5">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l6">
+
+                                <img class="img" src="img/l5.jpg" width="90" height="80" alt="Illy">
+                                <span class="described">Illy Etiopia Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant6"></span>
+                                    <span class="quantPrice6"></span>
+                                    <button id="btnDelate6">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l7">
+
+                                <img class="img" src="img/l6.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza Rosa Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant7"></span>
+                                    <span class="quantPrice7"></span>
+                                    <button id="btnDelate7">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l8">
+
+                                <img class="img" src="img/l7.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza Creme Gusto Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant8"></span>
+                                    <span class="quantPrice8"></span>
+                                    <button id="btnDelate8">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l9">
+
+                                <img class="img" src="img/m1.jpg" width="90" height="80" alt="Inka">
+                                <span class="described">Inka  Cafe 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant9"></span>
+                                    <span class="quantPrice9"></span>
+                                    <button id="btnDelate9">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l10">
+
+                                <img class="img" src="img/m2.jpg" width="90" height="80" alt="MkCafe">
+                                <span class="described">MK Cafe  Fresh Crema 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant10"></span>
+                                    <span class="quantPrice10"></span>
+                                    <button id="btnDelate10">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l11">
+
+                                <img class="img" src="img/m3.jpg" width="90" height="80" alt="Tupinamba">
+                                <span class="described">Tupinamba  Black 1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant11"></span>
+                                    <span class="quantPrice11"></span>
+                                    <button id="btnDelate11">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l12">
+
+                                <img class="img" src="img/t1.jpg" width="90" height="80" alt="Tchibo">
+                                <span class="described">Tchibo Crema   1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant12"></span>
+                                    <span class="quantPrice12"></span>
+                                    <button id="btnDelate12">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l13">
+
+                                <img class="img" src="img/w1.jpg" width="90" height="80" alt="Woseba">
+                                <span class="described">Woseba  Cafe Brasil   1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant13"></span>
+                                    <span class="quantPrice13"></span>
+                                    <button id="btnDelate13">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l14">
+
+                                <img class="img" src="img/w2.jpg" width="90" height="80" alt="Woseba">
+                                <span class="described">Woseba  Mocca Fix Gold   1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant14"></span>
+                                    <span class="quantPrice14"></span>
+                                    <button id="btnDelate14">usuń</button>
+                                </div> 
+                            </li>
+                            <li class="l15">
+
+                                <img class="img" src="img/m4.jpg" width="90" height="80" alt="Kimbo">
+                                <span class="described">Kimbo   Expresso   1kg.</span>
+                                <div class="productPrice">
+                                    <span class="quant15">0</span>
+                                    <span class="quantPrice15">0 pln</span>
+                                    <button id="btnDelate15">usuń</button>
+                                </div> 
+                            </li>
+                           
+                        </ul>
+                       <div class="border">
+                           <button class="btnBorder">Do Kasy</button>
+                        
+                       </div>
+                        
+                    
+                </div>
+            </div>     
+                </div>
+            </div>
+            </header>
+            <div class="popup">
+                <div class="popupContainer">
+                    <div class="mainTop">
+                         <span class="marginTop">Pomyślnie dodano do kosza</span>
+                
+                         <button id="btnClose">Zamknij X</button>
+                    </div>
+                    
+                           
+                    <li class="li"></li>
+                       
+                        <button id="btnContinue">Kontynuuj Zakupy</button>
+                            <div class="totalDecribe">
+                                <span class="productIntager">Ilość produktu:</span>
+                                <span class="intager"></span>
+                                <div class="totalBasket">Wartość koszyka:</div>
+                                <span class="totalBasketPrice"> </span>
+                                
+                            </div>
+                           
+                                <button id="btnOrder">Złóż zamówienie</button>
+                           
+                        </div>
+
+                    
+
+            </div>
+
+            <nav class="menu" >
+               
+                <ul>
+                    <li>Producenci</li>
+                    <li>Kawa</li>
+                    <li>Herbata</li>
+                    <li>Yerba</li>
+                    <li>Delikatesy</li>
+                    <li>Ekspresy i akcesoria</li>
+                    <li>Outlet</li>
+                </ul>
+            </nav>
+            <div class="mainContent2">
+
+                <h2 class="nameTitle">Zawartość Twojego Koszyka</h2>
+                    <div class="productBasket">
+                        <div class="productName">Produkt</div>      
+                        <div class="productQuant">Ilość</div>    
+                        <div class="productPrice">Cena</div>    
+                        <div class="productValue">wartość</div>    
+                        <div class="productDelete">Akcje</div>   
+                        
+                        
+
+                        <div class="first1" value="35">
+                             <img class="img1" src="img/1.jpg" width="90" height="80" alt="segafredo">
+                                    <span class="described">Segafredo Expresso Cafe 1kg.</span>
+                        
+                        </div>
+
+                        <div class="second1"></div>
+                        <div class="inputNumber1"></div>
+                        <div class="productPriceValue1"></div> 
+                        <button id="deleteBasket1">usuń</button>
+
+
+                        <div class="first2">
+                             <img class="img2" src="img/d1.jpg" width="90" height="80" alt="Dellmayr">
+                                    <span class="described">Dellmayr Expresso Cafe 1kg.</span>
+                        
+                        </div>
+
+                        <div class="second2"></div>
+                        <div class="inputNumber2"></div>
+                        <div class="productPriceValue2"></div> 
+                        <button id="deleteBasket2">usuń</button>
+
+
+
+
+                        <div class="first3">
+                             <img class="img3" src="img/d2.jpg" width="90" height="80" alt="Dellmayr">
+                                <span class="described">Dellmayr Expresso Cafe 1kg.</span>
+                        
+                        </div>
+
+                        <div class="second3"></div>
+                        <div class="inputNumber3"></div>
+                        <div class="productPriceValue3"></div> 
+                        <button id="deleteBasket3">usuń</button>
+
+
+
+                        <div class="first4">
+                             <img class="img4" src="img/l3.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza L`Expresso Cafe 1kg.</span>
+                        
+                        </div>
+
+
+                        <div class="second4"></div>
+                        <div class="inputNumber4"></div>
+                        <div class="productPriceValue4"></div> 
+                        <button id="deleteBasket4">usuń</button>
+
+
+                        <div class="first5">
+                            <img class="img5" src="img/l4.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza Crema Cafe 1kg.</span>
+                        
+                        </div>
+
+                        <div class="second5"></div>
+                        <div class="inputNumber5"></div>
+                        <div class="productPriceValue5"></div> 
+                        <button id="deleteBasket5">usuń</button>
+
+
+
+                        <div class="first6">
+                             <img class="img6" src="img/l5.jpg" width="90" height="80" alt="Illy">
+                                <span class="described">Illy Etiopia Cafe 1kg.</span>
+
+                        
+                        </div>
+
+                        <div class="second6"></div>
+                        <div class="inputNumber6"></div>
+                        <div class="productPriceValue6"></div> 
+                        <button id="deleteBasket6">usuń</button>
+
+
+
+                        <div class="first7">
+                             <img class="img7" src="img/l6.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza Rosa Cafe 1kg.</span>
+                        
+                        
+                        </div>
+
+                        <div class="second7"></div>
+                        <div class="inputNumber7"></div>
+                        <div class="productPriceValue7"></div> 
+                        <button id="deleteBasket7">usuń</button>
+
+
+                        <div class="first8">
+                             <img class="img8" src="img/l7.jpg" width="90" height="80" alt="Lavazza">
+                                <span class="described">Lavazza Creme Gusto Cafe 1kg.</span>
+                        </div>
+
+                        <div class="second8"></div>
+                        <div class="inputNumber8"></div>
+                        <div class="productPriceValue8"></div> 
+                        <button id="deleteBasket8">usuń</button>
+
+
+
+                        <div class="first9">
+                             <img class="img" src="img/m1.jpg" width="90" height="80" alt="Inka">
+                                <span class="described">Inka  Cafe 1kg.</span>
+
+                        </div>
+
+
+                        <div class="second9"></div>
+                        <div class="inputNumber9"></div>
+                        <div class="productPriceValue9"></div> 
+                        <button id="deleteBasket9">usuń</button>
+
+
+
+                        <div class="first10">
+                             <img class="img" src="img/m2.jpg" width="90" height="80" alt="MkCafe">
+                                <span class="described">MK Cafe  Fresh Crema 1kg.</span>
+
+                        
+                        </div>
+
+                        <div class="second10"></div>
+                        <div class="inputNumber10"></div>
+                        <div class="productPriceValue10"></div> 
+                        <button id="deleteBasket10">usuń</button>
+
+
+
+
+                        <div class="first11">
+                             <img class="img" src="img/m3.jpg" width="90" height="80" alt="Tupinamba">
+                                <span class="described">Tupinamba  Black 1kg.</span>
+                        
+                        
+                        </div>
+
+                        <div class="second11"></div>
+                        <div class="inputNumber11"></div>
+                        <div class="productPriceValue11"></div> 
+                        <button id="deleteBasket11">usuń</button>
+
+
+
+
+
+                        <div class="first12">
+                             <img class="img" src="img/t1.jpg" width="90" height="80" alt="Tchibo">
+                                <span class="described">Tchibo Crema   1kg.</span>
+                        
+                        
+                        </div>
+
+                        <div class="second12"></div>
+                        <div class="inputNumber12"></div>
+                        <div class="productPriceValue12"></div> 
+                        <button id="deleteBasket12">usuń</button>
+
+
+
+
+                        <div class="first13">
+                             <img class="img" src="img/w1.jpg" width="90" height="80" alt="Woseba">
+                                <span class="described">Woseba  Cafe Brasil   1kg.</span>
+                        
+                        </div>
+
+                        <div class="second13"></div>
+                        <div class="inputNumber13"></div>
+                        <div class="productPriceValue13"></div> 
+                        <button id="deleteBasket13">usuń</button>
+
+
+
+                        <div class="first14">
+                             <img class="img" src="img/w2.jpg" width="90" height="80" alt="Woseba">
+                                <span class="described">Woseba  Mocca Fix Gold   1kg.</span>
+                        
+                        </div>
+
+                        <div class="second14"></div>
+                        <div class="inputNumber14"></div>
+                        <div class="productPriceValue14"></div> 
+                        <button id="deleteBasket14">usuń</button>
+
+
+
+
+                        <div class="first15">
+                             <img class="img" src="img/m4.jpg" width="90" height="80" alt="Kimbo">
+                                <span class="described">Kimbo   Expresso   1kg.</span>
+                        
+                        </div>
+
+                        <div class="second15"></div>
+                        <div class="inputNumber15"></div>
+                        <div class="productPriceValue15"></div> 
+                        <button id="deleteBasket15">usuń</button>
+
+                        
+                       
+
+
+                     
+                        
+                       
+                       
+
+
+                      
+                    
+                    </div>
+
+                        <div class="containerC">
+                            
+                            <div class="leftside">
+                                <h2>Dostawa</h2>
+                                <div class="gls1">
+                                <input onclick="clik()" class="gls1_1"  type="radio"   name="radAnswer"  value="11.90"><strong>Kurier  GLS - Przedpłata</strong>
+                                <span>11.90 PLN</span></div>
+                                <div class="gls2">
+                                <input type="radio"  name="radAnswer" onclick="clik()" class="gls1_2"    value="13.90"><strong>Kurier  GLS - Pobranie</strong>
+                                <span>13.90 PLN</span></div>
+                                <div class="gls3">
+                                <input onclick="clik()" class="gls1_3" type="radio"  name="radAnswer"  value="10.90"><strong>Paczkomat inPost</strong>
+                                <span>11.90 PLN</span></div>
+                                <div class="gls4">
+                                <input onclick="clik()" class="gls1_4" type="radio"  name="radAnswer"  value="09.90"><strong>Odbiór w punkcie</strong>
+                                <span>09.90 PLN</span></div>
+                            </div>
+
+                            <div class="payment">
+                                <h2>Płatność</h2>
+                                <div class="pay1">
+                                <input  name="radAnswers"  type="radio"><strong>Przelew</strong>
+                                przedpłąta na konto bankowe</div>
+                                <div class="pay2">   
+                                <input  name="radAnswers"  type="radio"><strong>DotPay</strong>
+                                Karty płatnocze / szybkie transfery / przelew online / Blik/ PayPal</div>
+
+
+                            </div>
+
+                                <div class="basketSumUp">
+                                    <div class="total"><strong>Razem: </strong><span class="totalValue">251 pln</span></div>
+                                    <div class="valueShipment"><strong>Koszty dostawy:</strong> <span class="valueShipmentValue"></span></div>
+                                    <div class="totalAll"><strong>Do zpłaty:</strong> <span class="totalAllSpan">656zl</span></div>
+                                </div>
+
+
+
+
+                        </div>
+
+                        <div class="buttons">
+                            <div class="btnone">
+                                <button id="btnShopping">Kontynuuj Zakupy</button>
+                            </div> 
+                            <div class="btnTwo">
+                                <button id="btnOrder">Zamawiam</button>
+                            </div> 
+
+                        </div>
+
+
+
+
+
+
+
+
+            </div>
+
+                <footer id="footer">
+                       
+                        
+                    <ul class="groupe1">
+                        <li>Moje konto</li>
+                        <li>Twoje zamówienia</li>
+                        <li>Ustawienia konta</li>
+                        <li>Program lojalnościowy</li>
+                        <li>Procedura wymiany punktów</li>
+                    </ul>
+
+                
+                
+                    <ul class="groupe2">
+                        <li>Dostawa</li>
+                        <li>Płatności</li>
+                        <li>czas i koszty dostawy</li>
+                        <li>Faktury i paragony</li>
+                        <li>odbiór osobisty</li>
+                    </ul>
+                
+                
+                    <ul class="groupe3">
+                        <li>Kontakt</li>
+                        <li>Poniedziałek - Piątek</li>
+                        
+                        <li>8:00 - 18.30</li>
+                    
+                        <li>sklep@sklep.pl</li>
+                        
+                        <li>tel: +48 125 457 120</li>
+                        
+                        <li>Wrocław, ul. Ćwiartki 3/4</li>
+                    </ul>
+                
+            
+            </footer>
+   
+          
+            <script src="script2.js" async></script>      
+
+
+     
+    </div>   
+</body>
+</html>
