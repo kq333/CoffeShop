@@ -1,0 +1,16 @@
+
+//mobile
+
+@mixin mediaMb{
+
+    
+    @media screen and(max-width:500px){
+      @content;
+
+      .menu{
+          display:none;
+      }
+       
+    
+}
+};

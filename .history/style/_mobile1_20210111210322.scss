@@ -1,0 +1,17 @@
+
+//mobile
+
+@mixin mediaMb{
+
+    
+    @media screen and(max-width:500px){
+       display:none;
+
+       .cafeGenres{
+        display:none;
+
+       }
+       
+    
+}
+};

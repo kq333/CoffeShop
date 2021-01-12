@@ -1,0 +1,19 @@
+
+//mobile
+
+@mixin mediaMb{
+
+    
+    @media screen and(max-width:500px){
+      @content;
+
+       
+    
+}
+};
+
+@include mediaMb{
+    .menu{
+        display: none;;
+    }
+}

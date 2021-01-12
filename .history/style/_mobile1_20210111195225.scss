@@ -1,0 +1,33 @@
+/*
+
+//wideScreen
+@include mediaXl{
+
+}
+
+//desktop & laptop
+@include mediaLg{
+    
+}
+
+//Tablet
+@include mediaMd{
+    
+}
+
+*/
+
+//mobile
+
+@mixin mediaMb{
+    @media screen and(max-width:500px){
+        body{
+            background-color: red;
+        }
+        .menu{
+            display: none;
+        }
+    }
+    
+};
+     

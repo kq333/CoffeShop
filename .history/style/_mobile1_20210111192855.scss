@@ -1,0 +1,22 @@
+//wideScreen
+@include mediaXl{
+
+}
+
+//desktop & laptop
+@include mediaXl{
+    
+}
+
+//Tablet
+@include mediaXl{
+    
+}
+
+//mobile
+@include mediaXl{
+    .menu{
+        display:none;
+    }
+    
+}

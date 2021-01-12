@@ -1,0 +1,298 @@
+
+//mobile
+
+@mixin Lmobile{
+    
+    list-style-type: none;
+    cursor: pointer;
+    display:none;
+    width:auto;
+    height: 140px;
+    
+   
+
+.img{
+    margin:10px 0 0 -15px;
+
+};
+
+.described{
+    display: inline-block;
+    color:black;
+    margin-left:60px;
+    position: relative;
+    top: -70px;
+    font-size: small;
+     
+}
+    .productPrice{
+        display: inline-block;
+        position: relative;
+        top: -55px;
+      
+        .quant, .quant2, .quant3, .quant4, .quant5, .quant6, .quant7, .quant8, .quant9, .quant10, .quant11, .quant12, .quant13, .quant14, .quant15{        
+            display:inline-block;
+            font-weight: bold;
+            font-size: small;
+            top: -75px;
+        }
+        
+        .quantPrice, .quantPrice2, .quantPrice3, .quantPrice4, .quantPrice5, .quantPrice6, .quantPrice7, .quantPrice8, .quantPrice9, .quantPrice10, .quantPrice11, .quantPrice12, .quantPrice13, .quantPrice14, .quantPrice15{        
+            font-weight: bold;
+            display:inline-block;
+            font-size: small;
+            margin-left:30px;
+            top: -75px;
+        }
+        
+    #btnDelate1,  #btnDelate2,  #btnDelate3,  #btnDelate4,  #btnDelate5,  #btnDelate6,  #btnDelate7,  #btnDelate8,  #btnDelate9,  #btnDelate10,  #btnDelate11,  #btnDelate12,  #btnDelate13,  #btnDelate14,  #btnDelate15 {   
+        display:inline-block;
+        width:150%;
+    }  
+}    
+};
+
+@mixin btn {
+ 
+    width: 60%;
+    height:100%;
+    border-radius: 5px;
+    cursor: pointer;
+     
+};
+
+@mixin flexCenter{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+};
+
+@mixin quantity {
+
+    margin-left:20%;
+    width:50px;
+    border-radius: 5px;
+    font-size: 17px;
+
+};
+
+@mixin hover{
+    &:hover{
+        border:1px solid rgba(177, 177, 177 , 0.5);
+        cursor: pointer;
+    }
+};
+
+
+@mixin mediaMb{
+
+    
+    @media screen and(max-width:500px){
+      @content;
+
+       
+    
+}
+};
+
+@include mediaMb{
+
+    .sticky{
+        display:sticky;
+        top:0;
+
+        .header{
+            display:grid;
+            grid-template-columns: 50px 50px auto;
+            grid-template-areas: "log1 log2 basket";
+            height: 450px;
+            margin:0;
+
+            .logo{
+                display:none;
+                grid-area: log;
+                width:0px;
+    
+            }
+
+            .log1{
+                grid-area: log1;
+
+                #icon{
+                    font-size: 40px;
+                }
+               
+                .IconName{
+                   
+                    display:none;
+
+                }
+            }
+
+            .log2{
+                grid-area: log2;
+
+                #icon{
+                    font-size: 40px;
+                }
+
+                .IconName{
+                   
+                    display:none;
+
+                }
+
+            }
+
+            .basket{
+                grid-area: basket;
+
+                #icon{
+                    font-size: 60px;
+                }
+
+                .IconName{
+                   
+                    display:none;
+
+                }
+
+            }
+
+
+        }
+
+    }
+
+    .menu{
+        display:none;
+    }
+
+    
+
+    .mainContent{
+       // align-items: center;
+       // grid-template-columns: auto;
+        
+        
+      //  width:auto;
+        grid-template-areas:"main";
+
+        .cafeGenres{
+            margin:-20px;
+            
+            display:none;
+        };
+
+
+    .main{
+        align-items: center;
+        grid-area: main;
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "product1"
+        "product2"
+        "product3"
+        "product4"
+        "product5"
+        "product6"
+        "product7"
+        "product8"
+        "product9"
+        "product10"
+        "product11"
+        "product12"
+        "product13"
+        "product14"
+        "product15";
+       
+    
+
+    .product1{
+        h1{
+            display: none;
+        }
+        grid-area: product1;
+        width:90%;
+        height: 100%;
+        display:flex;
+        align-items: center;
+    }
+
+    .product2{
+        grid-area: product2;
+    }
+
+    .product3{
+        grid-area: product3;
+    }
+
+    .product4{
+        grid-area: product4;
+    }
+
+    .product5{
+        grid-area: product5;
+    }
+
+    .product6{
+        grid-area: product6;
+    }
+
+    .product7{
+        grid-area: product7;
+    }
+
+    .product8{
+        grid-area: product8;
+    }
+
+    .product9{
+        grid-area: product9;
+    }
+
+    .product10{
+        grid-area: product10;
+    }
+
+    .product11{
+        grid-area: product11;
+    }
+
+    .product12{
+        grid-area: product12;
+    }
+
+    .product13{
+        grid-area: product13;
+    }
+
+    .product14{
+        grid-area: product14;
+    }
+
+    .product15{
+        grid-area: product15;
+    }
+
+    }
+};
+
+
+
+
+  
+
+
+
+
+
+
+
+
+};
+
+

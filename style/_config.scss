@@ -1,0 +1,13 @@
+//@import 'mobile1';
+
+@mixin mediaSm{
+    @media screen and(max-width:500px){
+        body{
+            background-color: red;
+        }
+        .menu{
+            display: none;
+        }
+    }
+    
+}

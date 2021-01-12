@@ -1,0 +1,10 @@
+@import 'mobile1';
+
+@mixin mediaSm{
+    @media screen and(max-width:500px){
+        .menu{
+            display: none;;
+        }
+    }
+    
+}
